@@ -1,0 +1,48 @@
+DROP DATABASE IF EXISTS hangman;
+         CREATE DATABASE hangman
+		 DEFAULT CHARACTER SET utf8
+		 DEFAULT COLLATE utf8_general_ci;
+		 Use hangman
+CREATE TABLE users
+			 ( ID_Users  INT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE primary key,
+			 username varchar(100) NOT NULL,
+			 email varchar(100) NOT NULL,
+			 password varchar(100) NOT NULL,
+			 firstname varchar(100) NOT NULL,
+			 lastname varchar(100) NOT NULL,
+			 city varchar(100) NOT NULL
+		)
+        ENGINE = INNODB;
+		SHOW TABLES;
+CREATE TABLE words
+			 ( ID_Words  INT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE primary key,
+			 word varchar(100) NOT NULL,
+			 description varchar(100) NOT NULL,
+			 category varchar(100) NOT NULL
+		)
+        ENGINE = INNODB;
+		SHOW TABLES;
+		INSERT INTO words  VALUES ('1', 'Sofia', 'Столица на България', 'capital');
+		INSERT INTO words  VALUES ('2', 'Ankara', 'Столица на Турция', 'capital');
+		INSERT INTO words  VALUES ('3', 'Erusalim', 'Столица на Израел', 'capital');
+		INSERT INTO words  VALUES ('4', 'Otava', 'Столица на Канада', 'capital');
+		INSERT INTO words  VALUES ('5', 'Washington', 'Столица на САЩ', 'capital');
+		INSERT INTO words  VALUES ('6', 'Orange', 'Оранжев плод', 'fruit');
+		INSERT INTO words  VALUES ('7', 'Banan', 'Любим плод на маймуните', 'fruit');
+		INSERT INTO words  VALUES ('8', 'Grape', 'Използва се за приготвяне на вино', 'fruit');
+		INSERT INTO words  VALUES ('9', 'Apple', 'Дърво от рода Malus', 'fruit');
+		INSERT INTO words  VALUES ('10', 'Madnarina', 'Цитросов плод', 'fruit');
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
